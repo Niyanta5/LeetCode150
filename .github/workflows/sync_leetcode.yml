@@ -1,0 +1,31 @@
+name: Sync LeetCode Submissions
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch: # Allows you to manually trigger the workflow
+
+jobs:
+  sync-submissions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests PyGithub
+
+      - name: Run sync script
+        env:
+          LEETCODE_USERNAME: ${{ secrets.LEETCODE_USERNAME }}
+          LEETCODE_TOKEN: ${{ secrets.LEETCODE_TOKEN }}
+          LEETCODE_REPO: ${{ secrets.LEETCODE_REPO }}
+        run: python scripts/sync_leetcode_submissions.py
+
