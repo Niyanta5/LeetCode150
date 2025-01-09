@@ -7,11 +7,13 @@ from github import Github
 LEETCODE_USERNAME = os.getenv("LEETCODE_USERNAME")
 LEETCODE_TOKEN = os.getenv("LEETCODE_TOKEN")
 LEETCODE_REPO = os.getenv("LEETCODE_REPO")
+BRANCH_NAME = os.getenv("BRANCH_NAME", "main")  # Default to 'main' if not set
 leetcode_url = f"https://leetcode.com/api/submissions/{LEETCODE_USERNAME}/"
 
 # GitHub Authentication
 g = Github(LEETCODE_TOKEN)
-repo = g.get_user().get_repo("Niyanta5/Leetcode150")
+repo = g.get_user().get_repo(LEETCODE_REPO)
+branch = 'dev'
 
 # Fetch LeetCode submissions
 def fetch_submissions():
@@ -31,12 +33,15 @@ def push_to_github(submission):
     # Define file path for GitHub
     file_path = f"{date}/{problem_name}/{problem_name}_{language}.py"
     
-    # Check if file exists
+    # Check if file exists and push to the specific branch
     try:
-        file_content = repo.get_contents(file_path)
-        repo.update_file(file_content.path, f"Update {problem_name}", code, file_content.sha)
+        # Try to get the file contents from the specific branch
+        file_content = repo.get_contents(file_path, ref=BRANCH_NAME)
+        # Update the file
+        repo.update_file(file_content.path, f"Update {problem_name}", code, file_content.sha, branch=BRANCH_NAME)
     except:
-        repo.create_file(file_path, f"Add solution for {problem_name}", code)
+        # If the file doesn't exist, create it on the specified branch
+        repo.create_file(file_path, f"Add solution for {problem_name}", code, branch=BRANCH_NAME)
 
 # Main function
 def main():
