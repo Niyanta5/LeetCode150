@@ -11,7 +11,7 @@ leetcode_url = f"https://leetcode.com/api/submissions/{LEETCODE_USERNAME}/"
 
 # GitHub Authentication
 g = Github(LEETCODE_TOKEN)
-repo = g.get_user().get_repo(LEETCODE_REPO)
+repo = g.get_user().get_repo("Niyanta5/Leetcode150")
 
 # Fetch LeetCode submissions
 def fetch_submissions():
