@@ -28,7 +28,9 @@ fib	generatorfib.py	/^def fib():$/;"	f
 fibo	generatorfib.py	/^fibo = fib()$/;"	v
 findClosestNumber	2350-find-closest-number-to-zero/find-closest-number-to-zero.py	/^    def findClosestNumber(self, nums):$/;"	m	class:Solution
 g	scripts/sync_leetcode_submissions.py	/^g = Github(LEETCODE_TOKEN)$/;"	v
+gen	closemethodgen.py	/^gen = generator()$/;"	v
 gen	sendvaluestogen.py	/^gen = echo()$/;"	v
+generator	closemethodgen.py	/^def generator():$/;"	f
 isPalindrome	isPalindrome.py	/^    def isPalindrome(self, x:int) -> bool:$/;"	m	class:Solution
 leetcode_url	scripts/sync_leetcode_submissions.py	/^leetcode_url = f"https:\/\/leetcode.com\/api\/submissions\/{LEETCODE_USERNAME}\/"$/;"	v
 linkedlist	scripts/singlylinkedlist.py	/^    linkedlist = LinkedList()$/;"	v
