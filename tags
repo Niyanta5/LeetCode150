@@ -22,11 +22,13 @@ __init__	scripts/singlylinkedlist.py	/^    def __init__(self, item):$/;"	m	class
 branch	scripts/sync_leetcode_submissions.py	/^branch = 'dev'$/;"	v
 climbStairs	climbingstairs.py	/^    def climbStairs(self, n: int) -> int:$/;"	m	class:Solution
 datetime	scripts/sync_leetcode_submissions.py	/^import datetime$/;"	i
+echo	sendvaluestogen.py	/^def echo():$/;"	f
 fetch_submissions	scripts/sync_leetcode_submissions.py	/^def fetch_submissions():$/;"	f
 fib	generatorfib.py	/^def fib():$/;"	f
 fibo	generatorfib.py	/^fibo = fib()$/;"	v
 findClosestNumber	2350-find-closest-number-to-zero/find-closest-number-to-zero.py	/^    def findClosestNumber(self, nums):$/;"	m	class:Solution
 g	scripts/sync_leetcode_submissions.py	/^g = Github(LEETCODE_TOKEN)$/;"	v
+gen	sendvaluestogen.py	/^gen = echo()$/;"	v
 isPalindrome	isPalindrome.py	/^    def isPalindrome(self, x:int) -> bool:$/;"	m	class:Solution
 leetcode_url	scripts/sync_leetcode_submissions.py	/^leetcode_url = f"https:\/\/leetcode.com\/api\/submissions\/{LEETCODE_USERNAME}\/"$/;"	v
 linkedlist	scripts/singlylinkedlist.py	/^    linkedlist = LinkedList()$/;"	v
@@ -48,4 +50,5 @@ solution	169-majority-element/majority-element.py	/^solution  = Solution()$/;"	v
 solution	climbingstairs.py	/^solution = Solution()$/;"	v
 solution	isPalindrome.py	/^solution = Solution()$/;"	v
 solution	mincostclimbingstairs.py	/^solution = Solution()$/;"	v
+squares	generatorexp.py	/^squares = (x*x for x in range(10))$/;"	v
 third	scripts/singlylinkedlist.py	/^    third = Node(3)$/;"	v
