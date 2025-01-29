@@ -34,6 +34,7 @@ leetcode_url	scripts/sync_leetcode_submissions.py	/^leetcode_url = f"https:\/\/l
 linkedlist	scripts/singlylinkedlist.py	/^    linkedlist = LinkedList()$/;"	v
 main	isPalindrome.py	/^    def main(self):$/;"	m	class:Solution
 main	scripts/sync_leetcode_submissions.py	/^def main():$/;"	f
+maingenerator	yeildfrom.py	/^def maingenerator():$/;"	f
 majorityElement	169-majority-element/majority-element.py	/^    def majorityElement(self, alist):$/;"	m	class:Solution
 minimumCostToClimbStairs	mincostclimbingstairs.py	/^    def minimumCostToClimbStairs(self, cost: List[int]) -> int:$/;"	m	class:Solution
 os	scripts/sync_leetcode_submissions.py	/^import os$/;"	i
@@ -51,4 +52,5 @@ solution	climbingstairs.py	/^solution = Solution()$/;"	v
 solution	isPalindrome.py	/^solution = Solution()$/;"	v
 solution	mincostclimbingstairs.py	/^solution = Solution()$/;"	v
 squares	generatorexp.py	/^squares = (x*x for x in range(10))$/;"	v
+subgenerator	yeildfrom.py	/^def subgenerator():$/;"	f
 third	scripts/singlylinkedlist.py	/^    third = Node(3)$/;"	v
