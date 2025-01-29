@@ -12,6 +12,8 @@ LEETCODE_USERNAME	scripts/sync_leetcode_submissions.py	/^LEETCODE_USERNAME = os.
 LinkedList	scripts/singlylinkedlist.py	/^class LinkedList:$/;"	c
 List	mincostclimbingstairs.py	/^from typing import List$/;"	i
 Node	scripts/singlylinkedlist.py	/^class Node:$/;"	c
+Solution	169-majority-element/majority-element.py	/^class Solution:$/;"	c
+Solution	2350-find-closest-number-to-zero/find-closest-number-to-zero.py	/^class Solution(object):$/;"	c
 Solution	climbingstairs.py	/^class Solution:$/;"	c
 Solution	isPalindrome.py	/^class Solution:$/;"	c
 Solution	mincostclimbingstairs.py	/^class Solution:$/;"	c
@@ -21,20 +23,28 @@ branch	scripts/sync_leetcode_submissions.py	/^branch = 'dev'$/;"	v
 climbStairs	climbingstairs.py	/^    def climbStairs(self, n: int) -> int:$/;"	m	class:Solution
 datetime	scripts/sync_leetcode_submissions.py	/^import datetime$/;"	i
 fetch_submissions	scripts/sync_leetcode_submissions.py	/^def fetch_submissions():$/;"	f
+fib	generatorfib.py	/^def fib():$/;"	f
+fibo	generatorfib.py	/^fibo = fib()$/;"	v
+findClosestNumber	2350-find-closest-number-to-zero/find-closest-number-to-zero.py	/^    def findClosestNumber(self, nums):$/;"	m	class:Solution
 g	scripts/sync_leetcode_submissions.py	/^g = Github(LEETCODE_TOKEN)$/;"	v
 isPalindrome	isPalindrome.py	/^    def isPalindrome(self, x:int) -> bool:$/;"	m	class:Solution
 leetcode_url	scripts/sync_leetcode_submissions.py	/^leetcode_url = f"https:\/\/leetcode.com\/api\/submissions\/{LEETCODE_USERNAME}\/"$/;"	v
 linkedlist	scripts/singlylinkedlist.py	/^    linkedlist = LinkedList()$/;"	v
 main	isPalindrome.py	/^    def main(self):$/;"	m	class:Solution
 main	scripts/sync_leetcode_submissions.py	/^def main():$/;"	f
+majorityElement	169-majority-element/majority-element.py	/^    def majorityElement(self, alist):$/;"	m	class:Solution
 minimumCostToClimbStairs	mincostclimbingstairs.py	/^    def minimumCostToClimbStairs(self, cost: List[int]) -> int:$/;"	m	class:Solution
 os	scripts/sync_leetcode_submissions.py	/^import os$/;"	i
+prime	generatorprime.py	/^def prime(alist):$/;"	f
+primo	generatorprime.py	/^primo = prime([2, 4, 3, 21, 3, 42, 32])$/;"	v
 push_to_github	scripts/sync_leetcode_submissions.py	/^def push_to_github(submission):$/;"	f
 repo	scripts/sync_leetcode_submissions.py	/^repo = g.get_user().get_repo(LEETCODE_REPO)$/;"	v
 requests	scripts/sync_leetcode_submissions.py	/^import requests$/;"	i
+result	169-majority-element/majority-element.py	/^result = solution.majorityElement([2,3,4,3,3,3,3,1])$/;"	v
 result	climbingstairs.py	/^result = solution.climbStairs(10)$/;"	v
 result	mincostclimbingstairs.py	/^result = solution.minimumCostToClimbStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1])$/;"	v
 second	scripts/singlylinkedlist.py	/^    second = Node(2)$/;"	v
+solution	169-majority-element/majority-element.py	/^solution  = Solution()$/;"	v
 solution	climbingstairs.py	/^solution = Solution()$/;"	v
 solution	isPalindrome.py	/^solution = Solution()$/;"	v
 solution	mincostclimbingstairs.py	/^solution = Solution()$/;"	v
