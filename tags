@@ -15,7 +15,6 @@ Node	scripts/singlylinkedlist.py	/^class Node:$/;"	c
 Solution	169-majority-element/majority-element.py	/^class Solution:$/;"	c
 Solution	2350-find-closest-number-to-zero/find-closest-number-to-zero.py	/^class Solution(object):$/;"	c
 Solution	climbingstairs.py	/^class Solution:$/;"	c
-Solution	isPalindrome.py	/^class Solution:$/;"	c
 Solution	mincostclimbingstairs.py	/^class Solution:$/;"	c
 __init__	scripts/singlylinkedlist.py	/^    def __init__(self):$/;"	m	class:LinkedList
 __init__	scripts/singlylinkedlist.py	/^    def __init__(self, item):$/;"	m	class:Node
@@ -29,15 +28,15 @@ fetch_submissions	scripts/sync_leetcode_submissions.py	/^def fetch_submissions()
 fib	generatorfib.py	/^def fib():$/;"	f
 fibo	generatorfib.py	/^fibo = fib()$/;"	v
 findClosestNumber	2350-find-closest-number-to-zero/find-closest-number-to-zero.py	/^    def findClosestNumber(self, nums):$/;"	m	class:Solution
+find_subpalindromes	isPalindrome.py	/^def find_subpalindromes(s):$/;"	f
 g	scripts/sync_leetcode_submissions.py	/^g = Github(LEETCODE_TOKEN)$/;"	v
 gen	closemethodgen.py	/^gen = generator()$/;"	v
 gen	sendvaluestogen.py	/^gen = echo()$/;"	v
 generator	closemethodgen.py	/^def generator():$/;"	f
-isPalindrome	isPalindrome.py	/^    def isPalindrome(self, x:int) -> bool:$/;"	m	class:Solution
+is_palindrome	isPalindrome.py	/^def is_palindrome(s):$/;"	f
 json	serialization.py	/^import json$/;"	i
 leetcode_url	scripts/sync_leetcode_submissions.py	/^leetcode_url = f"https:\/\/leetcode.com\/api\/submissions\/{LEETCODE_USERNAME}\/"$/;"	v
 linkedlist	scripts/singlylinkedlist.py	/^    linkedlist = LinkedList()$/;"	v
-main	isPalindrome.py	/^    def main(self):$/;"	m	class:Solution
 main	scripts/sync_leetcode_submissions.py	/^def main():$/;"	f
 maingenerator	yeildfrom.py	/^def maingenerator():$/;"	f
 majorityElement	169-majority-element/majority-element.py	/^    def majorityElement(self, alist):$/;"	m	class:Solution
@@ -52,11 +51,11 @@ requests	scripts/sync_leetcode_submissions.py	/^import requests$/;"	i
 result	169-majority-element/majority-element.py	/^result = solution.majorityElement([2,3,4,3,3,3,3,1])$/;"	v
 result	climbingstairs.py	/^result = solution.climbStairs(10)$/;"	v
 result	mincostclimbingstairs.py	/^result = solution.minimumCostToClimbStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1])$/;"	v
+s	isPalindrome.py	/^s = "abac"$/;"	v
 salaries	serialization.py	/^salaries = '{"Nina": 300, "Niyanta": 300}'$/;"	v
 second	scripts/singlylinkedlist.py	/^    second = Node(2)$/;"	v
 solution	169-majority-element/majority-element.py	/^solution  = Solution()$/;"	v
 solution	climbingstairs.py	/^solution = Solution()$/;"	v
-solution	isPalindrome.py	/^solution = Solution()$/;"	v
 solution	mincostclimbingstairs.py	/^solution = Solution()$/;"	v
 squares	generatorexp.py	/^squares = (x*x for x in range(10))$/;"	v
 subgenerator	yeildfrom.py	/^def subgenerator():$/;"	f

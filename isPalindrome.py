@@ -1,14 +1,20 @@
-class Solution:
-    def isPalindrome(self, x:int) -> bool:
-        x = str(x)
-        if x == x[::-1]:
-            return True
-        return False
+def is_palindrome(s):
+    return s == s[::-1]
 
-    def main(self):
-        arr = [12321]
-        result = self.isPalindrome(arr[0])
-        print(result)
 
-solution = Solution()
-solution.main()
+def find_subpalindromes(s):
+    n = len(s)
+    palindromes = []
+
+    for i in range(n):
+        for j in range(i + 1, n + 1):
+            substring = s[i:j]
+
+            if is_palindrome(substring):
+                palindromes.append(substring)
+
+    return palindromes
+
+
+s = "abac"
+print(find_subpalindromes(s))
