@@ -7,7 +7,6 @@ class Solution:
             first, second = second, first + second
         return second
 
-# Create an instance of the Solution class
 solution = Solution()
 # Call the climbStairs method and print the result
 result = solution.climbStairs(10)
